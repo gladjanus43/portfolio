@@ -1,0 +1,94 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+a,
+a:hover,
+a:active,
+a:visited {
+  text-decoration: none;
+  color: black;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.button {
+  display: block;
+  width: 350px;
+  height: 60px;
+  border: 5px solid black;
+  border-radius: 100px;
+  text-align: center;
+  font-size: 1.2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.button:hover {
+  border-color: #4b86e5;
+  color: #4b86e5;
+}
+
+h2 {
+  font-size: 3em;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+header {
+  width: 900px;
+  height: 100vh;
+  margin: 0 auto 0 auto;
+}
+
+header h1 {
+  font-size: 6em;
+  font-family: "Source Sans Pro", sans-serif;
+  width: auto;
+  text-align: center;
+}
+
+header .head-content {
+  padding-top: 30%;
+}
+
+header .head-content .head-logo {
+  display: flex;
+  justify-content: center;
+}
+
+header .head-content .head-logo img {
+  margin-right: 40px;
+}
+
+header .head-content .buttons-container {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-around;
+}
+
+header .arrow {
+  width: 500px;
+  height: 300px;
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 250px);
+  border-bottom: 1px solid black;
+}
+
+#look_down {
+  position: fixed;
+  bottom: 0;
+  left: calc(50% - 150px);
+  width: 300px;
+  height: 300px;
+}
+
+.about {
+  width: 900px;
+  height: 100vh;
+  background-color: beige;
+  margin: auto;
+}
+

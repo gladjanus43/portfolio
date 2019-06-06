@@ -11,6 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('', 'ViewController@index')->name('index');
+
+Route::get('index', function(){
+    return view('index2');
 });
