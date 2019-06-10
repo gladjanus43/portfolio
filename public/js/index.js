@@ -29,17 +29,6 @@ function windowScrolled() {
   } else if (scrolled == 0) {
     showElement()
   }
-
-  //scroll to about
-  if(scrolled > 100 && jumped == false){
-    jumped = true   
-    let about = document.getElementsByClassName('about')[0]
-    about.scrollIntoView({
-      behavior: 'smooth'
-    })
-  }
-
-  // if(scrolled < 600)
 }
 
 function hideElement() {
