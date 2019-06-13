@@ -30,9 +30,9 @@
                     <a href="#" class="button">Contact</a>
                 </div>
 
-                <div class="text-c mt-l">This site is a mini summary of my life!</div>
+                {{-- <div class="text-c mt-l">This site is a mini summary of my life!</div> --}}
 
-                <div class="icons">
+                <div class="icons mt-l">
                     <div class="icon">
                         <img src="{{asset('images/icons/football.png')}}" alt="">
                     </div>
@@ -54,7 +54,6 @@
     </header>
 
     <div class="about-container">
-
         <div class="about-items">
             <div class="about-pic">
                 <img src="{{asset('images/blackwhite.png')}}" alt="" srcset="">
@@ -65,14 +64,47 @@
                 <p class="p">
                     I am 20 years old and I am enjoying life to the fullest. Besides studying CMGT at Rotterdam
                     University of applied sciences I also love to go to festivals and enjoy the occasional drink with
-                    some friends. I also play soccer and when I have some time left and there is a little breeze I like
+                    some friends. I also play soccer 3 times a week. When I still have some time left and there is a
+                    breeze I like
                     to go windsurfing!
                 </p>
-
-
             </div>
         </div>
+        <div class="devider">
+            <img src="{{asset('images/devider.svg')}}" alt="">
+        </div>
+    </div>
 
+    <div class="school">
+        <div class="vert-align">
+            <div class="school-container">
+                <h2>School</h2>
+                <p class="p">CMGT, Also known as creative media and game technologies is a study based in Rotterdam. The
+                    main goal of the study is to learn programming. Each period we learn a new programming language or
+                    we
+                    continue with something that we’ve already learned. Nothing crazy there! Where our study differs
+                    from
+                    other studies is that the projects we do are broad. This means that we learn how to design products,
+                    choose a target audience, talk to stakeholders, develop, test and often discuss the latest trends in
+                    technologies. It is a broad study and it forces you to be very independent.
+                </p>
+                <div class="cards">
+                    @foreach ($cards as $card)
+                    <div class="card">
+                            <div class="card-img">
+                                <img class="card-img" src="{{asset('images/icons/' . $card->cards)}}" />
+                            </div>
+                            <div class="card-content">
+                                <h3>{{$card->title}}</h3>
+                                <p class="p-small">
+                                    {{$card->description}}
+                                </p>
+                            </div>
+                        </div>
+                    @endforeach
+                </div>
+            </div>
+        </div>
     </div>
 
 </body>
